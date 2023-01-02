@@ -2,17 +2,92 @@
 <html lang="ru">
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Место</title>
-    <link rel="stylesheet" href="./pages/index.css">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Место</title>
+  <link rel="stylesheet" href="./pages/index.css">
 </head>
 
 <body>
-<section class="header">
-    <img src="" alt="" class="header-logo">
-</section>
+  <div class="page">
+    <div class="page__container">
+      <section class="header">
+        <div class="header__container">
+          <img src="./images/header-logo.svg" alt="Логотип Место" class="header__logo">
+          <img src="./images/header-line.svg" alt="Горизонтальная линия" class="header__line">
+        </div>
+      </section>
+      <main class="content">
+        <section class="profile">
+          <div class="profile__container">
+            <div class="profile__card">
+              <img src="./images/image-avatar.jpg" alt="Аватар" class="profile__photo">
+              <div class="profile__info">
+                <h1 class="profile__name">Жак-Ив Кусто</h1>
+                <button class="profile__redact-btn">
+                  <img src="./images/pen.svg" alt="Белый карандаш"
+                    class="profile__btn-pencil">
+                </button>
+                <p class="profile__description">Исследователь океана</p>
+              </div>
+            </div>
+            <button class="profile__add-btn">
+              <img src="./images/add-button.svg" alt="Белый плюс" class="profile__btn-plus">
+            </button>
+          </div>
+        </section>
+        <section class="place">
+          <div class="place__container">
+            <ul class="place__cards">
+              <li class="place__card">
+                <img src="./images/photo-karachaevsk.jpg" alt="Старая крепость Карачаевска" class="place__image">
+                <div class="place__info">
+                  <p class="place__name">Карачаевск</p>
+                  <img src="./images/heart.svg" alt="Сердечко" class="place__icon">
+                </div>
+              </li>
+              <li class="place__card">
+                <img src="./images/photo-elbrus.jpg" alt="Эльбрус на закате" class="place__image">
+                <div class="place__info">
+                  <p class="place__name">Гора Эльбрус</p>
+                  <img src="./images/heart.svg" alt="Сердечко" class="place__icon">
+                </div>
+              </li>
+              <li class="place__card">
+                <img src="./images/photo-dombay.jpg" alt="Снежные вершины Домбая" class="place__image">
+                <div class="place__info">
+                  <p class="place__name">Домбай</p>
+                  <img src="./images/heart.svg" alt="Сердечко" class="place__icon">
+                </div>
+              </li>
+              <li class="place__card">
+                <img src="./images/photo-kamchatka.jpg" alt="Вулкан Камчатки" class="place__image">
+                <div class="place__info">
+                  <p class="place__name">Камчатка</p>
+                  <img src="./images/heart.svg" alt="Сердечко" class="place__icon">
+                </div>
+              </li>
+              <li class="place__card">
+                <img src="./images/photo-volga.jpg" alt="Река Волга" class="place__image">
+                <div class="place__info">
+                  <p class="place__name">Волга</p>
+                  <img src="./images/heart.svg" alt="Сердечко" class="place__icon">
+                </div>
+              </li>
+              <li class="place__card">
+                <img src="./images/photo-baikal.jpg" alt="Ледяной Байкал" class="place__image">
+                <div class="place__info">
+                  <p class="place__name">Байкал</p>
+                  <img src="./images/heart.svg" alt="Сердечко" class="place__icon">
+                </div>
+              </li>
+            </ul>
+          </div>
+        </section>
+      </main>
+    </div>
+  </div>
 </body>
 
 </html>

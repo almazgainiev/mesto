@@ -1,0 +1,11 @@
+.profile__redact-btn {
+  grid-area: profile__redact-btn;
+  justify-self: start;
+  width: 18px;
+  height: 18px;
+  align-self: center;
+  border: 1px solid rgba(255, 255, 255, 1) ;
+  background-color: transparent;
+  padding: 0;
+  display: flex;
+}

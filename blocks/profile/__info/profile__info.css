@@ -1,0 +1,12 @@
+.profile__info {
+  width: 100%;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(max-content, max-content);
+  grid-template-rows: repeat(2, max-content);
+  grid-template-areas:
+  "profile__name profile__redact-btn"
+  "profile__description profile__description";
+  justify-items: center;
+  column-gap: 10px;
+}

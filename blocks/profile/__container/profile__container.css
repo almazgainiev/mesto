@@ -1,0 +1,6 @@
+.profile__container {
+  margin: 42px auto 0;
+  width: calc(100% - 38px);
+  display: grid;
+  grid-template-rows: repeat(2, max-content);
+}

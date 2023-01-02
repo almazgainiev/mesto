@@ -1,0 +1,11 @@
+.profile__name {
+  max-width: 189px;
+  font-weight: 500;
+  font-style: normal;
+  font-size: 27px;
+  line-height: 33px;
+  text-align: center;
+  grid-area: profile__name;
+  justify-self: end;
+  align-self: center;
+}
