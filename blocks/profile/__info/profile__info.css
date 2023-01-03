@@ -1,12 +1,20 @@
 .profile__info {
   width: 100%;
-  margin: 0 auto;
+  margin: 22.25px auto 31px;
   display: grid;
-  grid-template-columns: repeat(max-content, max-content);
   grid-template-rows: repeat(2, max-content);
   grid-template-areas:
   "profile__name profile__redact-btn"
   "profile__description profile__description";
   justify-items: center;
   column-gap: 10px;
+}
+
+@media screen and (min-width: 1024px) {
+  .profile__info {
+  margin-left: 30px;
+  grid-template-columns: repeat(2, max-content);
+  justify-items: flex-start;
+  column-gap: 18px;
+  }
 }

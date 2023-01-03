@@ -9,3 +9,11 @@
   padding: 0;
   display: flex;
 }
+
+@media screen and (min-width: 1024px) {
+  .profile__redact-btn {
+    width: 24px;
+    height: 24px;
+  }
+
+}
