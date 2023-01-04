@@ -1,0 +1,20 @@
+.popup__close {
+  background-image: url(../../../images/close-icon.svg);
+  width: 20px;
+  height: 20px;
+  border: none;
+  background-color: transparent;
+  justify-self: flex-end;
+  box-sizing: border-box;
+  object-fit: cover;
+  background-repeat: no-repeat;
+  padding: 0;
+  background-size: 100%;
+}
+
+@media screen and (min-width: 1024px) {
+  .popup__close {
+    width: 32px;
+    height: 32px;
+  }
+}

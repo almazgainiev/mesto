@@ -1,0 +1,13 @@
+.popup__container {
+  max-width: 282px;
+  position: relative;
+  display: grid;
+  row-gap: 16px;
+}
+
+@media screen and (min-width: 1024px) {
+  .popup__container {
+    max-width: 510px;
+    gap: 8px;
+  }
+}

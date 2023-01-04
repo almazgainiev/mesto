@@ -1,0 +1,8 @@
+.form__item_type_name {
+  margin-bottom: 30px;
+}
+
+@media screen and (min-width: 1024px) {
+  .form__item_type_name {
+  }
+}
