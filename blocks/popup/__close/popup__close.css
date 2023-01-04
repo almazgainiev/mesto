@@ -4,17 +4,21 @@
   height: 20px;
   border: none;
   background-color: transparent;
-  justify-self: flex-end;
   box-sizing: border-box;
   object-fit: cover;
   background-repeat: no-repeat;
   padding: 0;
   background-size: 100%;
+  position: absolute;
+  top: -36px;
+  right: 0;
 }
 
 @media screen and (min-width: 1024px) {
   .popup__close {
     width: 32px;
     height: 32px;
+    top: -40px;
+    right: -40px;
   }
 }
