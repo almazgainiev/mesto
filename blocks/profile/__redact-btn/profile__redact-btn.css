@@ -10,6 +10,10 @@
   display: flex;
 }
 
+.profile__redact-btn:hover {
+  opacity: .6;
+}
+
 @media screen and (min-width: 1024px) {
   .profile__redact-btn {
     width: 24px;
