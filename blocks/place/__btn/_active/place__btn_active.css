@@ -1,0 +1,7 @@
+.place__btn_active {
+  background-image: url(../../../../images/heart-active.svg);
+  background-repeat: no-repeat;
+  box-sizing: border-box;
+  object-fit: cover;
+  background-position: center;
+}

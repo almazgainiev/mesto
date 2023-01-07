@@ -1,0 +1,18 @@
+.place__btn {
+  width: 22px;
+  height: 19px;
+  margin-right: 20px;
+  align-self: center;
+  justify-self: end;
+  background-image: url(../../../images/heart.svg);
+  background-repeat: no-repeat;
+  box-sizing: border-box;
+  object-fit: cover;
+  background-position: center;
+  border: none;
+  background-color: transparent;
+}
+
+.place__btn:hover {
+  opacity: .6;
+}

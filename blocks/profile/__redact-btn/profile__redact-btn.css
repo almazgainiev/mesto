@@ -8,6 +8,11 @@
   background-color: transparent;
   padding: 0;
   display: flex;
+  background-image: url(../../../images/pen.svg);
+  background-repeat: no-repeat;
+  box-sizing: border-box;
+  object-fit: cover;
+  background-position: center;
 }
 
 .profile__redact-btn:hover {
@@ -19,5 +24,4 @@
     width: 24px;
     height: 24px;
   }
-
 }

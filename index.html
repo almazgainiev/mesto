@@ -13,99 +13,87 @@
   <div class="page">
     <div class="page__container">
       <section class="header" aria-label="header">
-        <div class="header__container">
-          <img src="./images/header-logo.svg" alt="Логотип Место" class="header__logo">
-          <img src="./images/header-line.svg" alt="Горизонтальная линия" class="header__line">
-        </div>
+        <img src="./images/header-logo.svg" alt="Логотип Место" class="header__logo">
       </section>
       <main class="content">
         <section class="profile">
-          <div class="profile__container">
             <div class="profile__card">
               <img src="./images/image-avatar.jpg" alt="Аватар" class="profile__photo">
               <div class="profile__info">
                 <h1 class="profile__name">Жак-Ив Кусто</h1>
-                <button class="profile__redact-btn">
-                  <img src="./images/pen.svg" alt="Белый карандаш" class="profile__btn-pencil">
-                </button>
+                <button type="button" class="profile__redact-btn"></button>
                 <p class="profile__description">Исследователь океана</p>
               </div>
             </div>
-            <button class="profile__add-btn">
-              <img src="./images/add-button.svg" alt="Белый плюс" class="profile__btn-plus">
+            <button type="button" class="profile__add-btn">
             </button>
-          </div>
         </section>
         <section class="place" aria-label="place">
-          <div class="place__container">
-            <ul class="place__cards">
-              <li class="place__card">
-                <img src="./images/photo-karachaevsk.jpg" alt="Старая крепость Карачаевска" class="place__image">
-                <div class="place__info">
-                  <p class="place__name">Карачаевск</p>
-                  <img src="./images/heart.svg" alt="Сердечко" class="place__icon">
-                </div>
-              </li>
-              <li class="place__card">
-                <img src="./images/photo-elbrus.jpg" alt="Эльбрус на закате" class="place__image">
-                <div class="place__info">
-                  <p class="place__name">Гора Эльбрус</p>
-                  <img src="./images/heart.svg" alt="Сердечко" class="place__icon">
-                </div>
-              </li>
-              <li class="place__card">
-                <img src="./images/photo-dombay.jpg" alt="Снежные вершины Домбая" class="place__image">
-                <div class="place__info">
-                  <p class="place__name">Домбай</p>
-                  <img src="./images/heart.svg" alt="Сердечко" class="place__icon">
-                </div>
-              </li>
-              <li class="place__card">
-                <img src="./images/photo-kamchatka.jpg" alt="Вулкан Камчатки" class="place__image">
-                <div class="place__info">
-                  <p class="place__name">Камчатка</p>
-                  <img src="./images/heart.svg" alt="Сердечко" class="place__icon">
-                </div>
-              </li>
-              <li class="place__card">
-                <img src="./images/photo-volga.jpg" alt="Река Волга" class="place__image">
-                <div class="place__info">
-                  <p class="place__name">Волга</p>
-                  <img src="./images/heart.svg" alt="Сердечко" class="place__icon">
-                </div>
-              </li>
-              <li class="place__card">
-                <img src="./images/photo-baikal.jpg" alt="Ледяной Байкал" class="place__image">
-                <div class="place__info">
-                  <p class="place__name">Байкал</p>
-                  <img src="./images/heart.svg" alt="Сердечко" class="place__icon place__icon_active">
-                </div>
-              </li>
-            </ul>
-          </div>
+          <ul class="place__cards">
+            <li class="place__card">
+              <img src="./images/photo-karachaevsk.jpg" alt="Старая крепость Карачаевска" class="place__image">
+              <div class="place__info">
+                <h2 class="place__name">Карачаевск</h2>
+                <button type="button" class="place__btn"></button>
+              </div>
+            </li>
+            <li class="place__card">
+              <img src="./images/photo-elbrus.jpg" alt="Эльбрус на закате" class="place__image">
+              <div class="place__info">
+                <h2 class="place__name">Гора Эльбрус</h2>
+                <button type="button" class="place__btn"></button>
+              </div>
+            </li>
+            <li class="place__card">
+              <img src="./images/photo-dombay.jpg" alt="Снежные вершины Домбая" class="place__image">
+              <div class="place__info">
+                <h2 class="place__name">Домбай</h2>
+                <button type="button" class="place__btn"></button>
+              </div>
+            </li>
+            <li class="place__card">
+              <img src="./images/photo-kamchatka.jpg" alt="Вулкан Камчатки" class="place__image">
+              <div class="place__info">
+                <h2 class="place__name">Камчатка</h2>
+                <button type="button" class="place__btn"></button>
+              </div>
+            </li>
+            <li class="place__card">
+              <img src="./images/photo-volga.jpg" alt="Река Волга" class="place__image">
+              <div class="place__info">
+                <h2 class="place__name">Волга</h2>
+                <button type="button" class="place__btn"></button>
+              </div>
+            </li>
+            <li class="place__card">
+              <img src="./images/photo-baikal.jpg" alt="Ледяной Байкал" class="place__image">
+              <div class="place__info">
+                <h2 class="place__name">Байкал</h2>
+                <button type="button" class="place__btn"></button>
+              </div>
+            </li>
+          </ul>
         </section>
       </main>
       <footer class="footer">
-        <div class="footer__container">
-          <p class="footer__copyright">&copy; 2022 Mesto Russia</p>
-        </div>
+        <p class="footer__copyright">&copy; 2022 Mesto Russia</p>
       </footer>
     </div>
     <section class="popup">
       <div class="popup__container">
-        <button class="popup__close"></button>
-        <form class="form">
-          <h2 class="form__title">Редактировать профиль</h2>
-          <div class="form__items">
-            <input type="text" value="Жак-Ив Кусто" class="form__item form__item_type_name">
-            <input type="text" value="Исследователь океана" class="form__item form__item_type_job">
-          </div>
+        <button type="button" class="popup__close"></button>
+        <h2 class="popup__title">Редактировать профиль</h2>
+        <form class="form" name="forma">
+          <fieldset class="form__fields">
+            <input type="text" name="name" value="Жак-Ив Кусто" class="form__input form__input_type_name">
+            <input type="text" name="job" value="Исследователь океана" class="form__input form__input_type_job">
+          </fieldset>
           <button type="submit" class="form__submit-btn">Сохранить</button>
         </form>
       </div>
     </section>
   </div>
-  <script src="./scripts/index.js"></script>
+  <script async src="./scripts/index.js"></script>
 </body>
 
 </html>
