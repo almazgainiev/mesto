@@ -1,4 +1,4 @@
-.place__btn {
+.place-element__heart {
   width: 22px;
   height: 19px;
   margin-right: 20px;
@@ -13,6 +13,6 @@
   background-color: transparent;
 }
 
-.place__btn:hover {
+.place-element__heart:hover {
   opacity: .6;
 }

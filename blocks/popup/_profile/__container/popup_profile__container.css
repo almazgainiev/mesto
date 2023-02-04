@@ -1,0 +1,13 @@
+.popup_profile__container {
+  width: 282px;
+  position: relative;
+  background-color: rgba(255, 255, 255, 1);
+  border-radius: 10px;
+}
+
+@media screen and (min-width: 1024px) {
+  .popup_profile__container {
+    width: 430px;
+    margin: 0 auto;
+  }
+}
