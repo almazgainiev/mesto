@@ -33,10 +33,10 @@
 @import url(../blocks/popup/__photo/popup__photo.css);
 @import url(../blocks/popup/__description/popup__description.css);
 @import url(../blocks/places/places.css);
-@import url(../blocks/place-item/place-item.css);
-@import url(../blocks/place-item/__name/place-item__name.css);
-@import url(../blocks/place-item/__photo/place-item__photo.css);
-@import url(../blocks/place-item/__info/place-item__info.css);
-@import url(../blocks/place-item/__heart/place-item__heart.css);
-@import url(../blocks/place-item/__heart/_active/place-item__heart_active.css);
-@import url(../blocks/place-item/__delete/place-item__del.css);
+@import url(../blocks/place/place.css);
+@import url(../blocks/place/__name/place__name.css);
+@import url(../blocks/place/__photo/place__photo.css);
+@import url(../blocks/place/__info/place__info.css);
+@import url(../blocks/place/__heart/place__heart.css);
+@import url(../blocks/place/__heart/_active/place__heart_active.css);
+@import url(../blocks/place/__delete/place__del.css);

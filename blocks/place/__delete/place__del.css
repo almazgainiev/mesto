@@ -1,4 +1,4 @@
-.place-item__del {
+.place__del {
   width: 19px;
   height: 18px;
   position: absolute;
@@ -13,6 +13,6 @@
   background-color: transparent;
 }
 
-.place-item__del:hover {
+.place__del:hover {
   opacity: .6;
 }

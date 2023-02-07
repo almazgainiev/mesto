@@ -64,22 +64,22 @@ function handleFormProfileSubmit(evt) {
   closePopup(popupProfile);
 }
 const createCard = (card) => {
-  const place = template.content.querySelector('.placeitem').cloneNode(true);
-  const addNewDeleteButtonOfPlace = place.querySelector('.place-item__del');
+  const placeTemplate = template.content.querySelector('.place').cloneNode(true);
+  const addNewDeleteButtonOfPlace = placeTemplate.querySelector('.place__del');
   addNewDeleteButtonOfPlace.addEventListener('click', () => {
-    place.remove()
+    placeTemplate.remove()
   });
-  const addNewNameOfPlace = place.querySelector('.place-item__name');
+  const addNewNameOfPlace = placeTemplate.querySelector('.place__name');
   addNewNameOfPlace.textContent = card.name;
-  const addNewLikeOfPlace = place.querySelector('.place-item__heart');
+  const addNewLikeOfPlace = placeTemplate.querySelector('.place__heart');
   addNewLikeOfPlace.addEventListener('click', (evt) => {
-    evt.target.classList.toggle('place-item__heart_active');
+    evt.target.classList.toggle('place__heart_active');
   });
-  const addNewPhotoOfPlace = place.querySelector('.place-item__photo');
+  const addNewPhotoOfPlace = placeTemplate.querySelector('.place__photo');
   addNewPhotoOfPlace.alt = card.name;
   addNewPhotoOfPlace.src = card.link;
   addNewPhotoOfPlace.addEventListener('click', () => infoOfPlace(card.name, card.link));
-  return place;
+  return placeTemplate;
 }
 const renderList = (card) => {
   placeList.append(createCard(card));
@@ -89,11 +89,11 @@ initialCards.forEach((item) => {
 });
 function handleFormCardSubmit(evt) {
   evt.preventDefault();
-  const placeitem = createCard({
+  const place = createCard({
     name: placeInput.value,
     link: linkInput.value
   });
-  placeList.prepend(placeitem);
+  placeList.prepend(place);
   closePopup(popupCard);
   formElementCard.reset();
 }
