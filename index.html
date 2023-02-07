@@ -47,9 +47,9 @@
         </form>
       </div>
     </div>
-    <div class="popup popup_card">
+   <div class="popup popup_card">
       <div class="popup_card__container">
-        <button type="button" class="popup__close"></button>
+        <button type="button" class="popup__close" id="popup__close_card"></button>
         <h2 class="popup__title">Новое место</h2>
         <form class="form form_card" name="cardForma">
           <fieldset class="form__fields">
@@ -64,18 +64,18 @@
     </div>
     <div class="popup popup_place">
       <div class="popup_place__container">
-        <button type="button" class="popup__close"></button>
+        <button type="button" class="popup__close popup__close_place"></button>
         <img src="#" alt="#" class="popup__photo">
         <p class="popup__description"></p>
       </div>
     </div>
-    <template id="template-place-element">
-      <div class="place-element">
-        <img src="#" alt="#" class="place-element__photo">
-        <button class="place-element__delete" type="button"></button>
-        <div class="place-element__info">
-          <h2 class="place-element__name"></h2>
-          <button type="button" class="place-element__btn"></button>
+    <template id="place-item-template">
+      <div class="placeitem">
+        <img src="#" alt="#" class="place-item__photo">
+        <button class="place-item__del" type="button"></button>
+        <div class="place-item__info">
+          <h2 class="place-item__name"></h2>
+          <button type="button" class="place-item__heart"></button>
         </div>
       </div>
     </template>

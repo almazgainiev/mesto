@@ -1,10 +1,10 @@
-.place-element__delete {
+.place-item__del {
   width: 19px;
   height: 18px;
   position: absolute;
   top: 20px;
   right: 20px;
-  background-image: url(../../../images/Vector.svg);
+  background-image: url(../../../images/Grouprubbis\ bin.svg);
   background-repeat: no-repeat;
   box-sizing: border-box;
   object-fit: cover;
@@ -13,6 +13,6 @@
   background-color: transparent;
 }
 
-.place-element__delete:hover {
+.place-item__del:hover {
   opacity: .6;
 }
