@@ -23,13 +23,13 @@
 @import url(../blocks/form/__input/form__input.css);
 @import url(../blocks/form/__input/_type/_name/form__input_type_name.css);
 @import url(../blocks/popup/__title/popup__title.css);
-@import url(../blocks/popup/_profile/__container/popup_profile__container.css);
-@import url(../blocks/popup/_card/__container/popup_card__container.css);
+@import url(../blocks/popup-profile/__container/popup-profile__container.css);
+@import url(../blocks/popup-card/__container/popup-card__container.css);
 @import url(../blocks/form/_card/form_card.css);
 @import url(../blocks/form/_card/form_card.css);
 @import url(../blocks/form/__input/_type/_place/form__input_type_place.css);
-@import url(../blocks/popup/_place/popup_place.css);
-@import url(../blocks/popup/_place/__container/popup_place__container.css);
+@import url(../blocks/popup-place/popup-place.css);
+@import url(../blocks/popup-place/__container/popup-place__container.css);
 @import url(../blocks/popup/__photo/popup__photo.css);
 @import url(../blocks/popup/__description/popup__description.css);
 @import url(../blocks/places/places.css);
