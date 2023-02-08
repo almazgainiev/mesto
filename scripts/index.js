@@ -1,24 +1,22 @@
 const popupProfile = document.querySelector('.popup-profile');
-const popupCloseButtonElement = popupProfile.querySelector('.popup__close');
+const closeButtons = document.querySelectorAll('.popup__close');
 const popupOpenButtonElement = document.querySelector('.profile__redact-btn');
-let getValueOfName = document.querySelector('.form__input_type_name');
-let getValueOfJob = document.querySelector('.form__input_type_job');
-let ProfileName = document.querySelector('.profile__name');
-let ProfileJob = document.querySelector('.profile__description');
-let formElement = document.querySelector('.form');
-let nameInput = formElement.querySelector('.form__input_type_name');
-let jobInput = formElement.querySelector('.form__input_type_job');
+const getValueOfName = document.querySelector('.form__input_type_name');
+const getValueOfJob = document.querySelector('.form__input_type_job');
+const profileName = document.querySelector('.profile__name');
+const profileJob = document.querySelector('.profile__description');
+const formElement = document.querySelector('.form');
+const nameInput = formElement.querySelector('.form__input_type_name');
+const jobInput = formElement.querySelector('.form__input_type_job');
 const placeList = document.querySelector('.places');
 const template = document.querySelector('#place-item-template');
 const popupCard = document.querySelector('.popup-card');
-const popupCardCloseButtonElement = popupCard.querySelector('#popup__close_card');
 const popupCardOpenButtonElement = document.querySelector('.profile__add-btn');
-let formElementCard = document.querySelector('.form_card');
-let placeInput = formElementCard.querySelector('.form__input_type_place');
-let linkInput = formElementCard.querySelector('.form__input_type_link');
+const formElementCard = document.querySelector('.form_card');
+const placeInput = formElementCard.querySelector('.form__input_type_place');
+const linkInput = formElementCard.querySelector('.form__input_type_link');
 const popupPlace = document.querySelector('.popup-place');
 const popupPlacePhoto = popupPlace.querySelector('.popup__photo');
-const popupPlaceCloseButtonElement = popupPlace.querySelector('.popup__close_place');
 const popupPlaceDescrtiption = popupPlace.querySelector('.popup__description');
 const initialCards = [
   {
@@ -52,16 +50,23 @@ function openPopup(popup) {
 function closePopup(popup) {
   popup.classList.remove('popup_opened');
 }
+
+closeButtons.forEach((button) => {
+  const popup = button.closest('.popup');
+  button.addEventListener('click', () => closePopup(popup));
+});
+
+
 function handleProfileEdit() {
-  nameInput.value = ProfileName.textContent;
-  jobInput.value = ProfileJob.textContent;
+  nameInput.value = profileName.textContent;
+  jobInput.value = profileJob.textContent;
   openPopup(popupProfile);
 }
 function handleFormProfileSubmit(evt) {
   evt.preventDefault();
-  ProfileName.textContent = getValueOfName.value;
-  ProfileJob.textContent = getValueOfJob.value;
-  closePopup(popupProfile);
+  profileName.textContent = getValueOfName.value;
+  profileJob.textContent = getValueOfJob.value;
+  closePopup(popupProfile);;
 }
 const createCard = (card) => {
   const placeTemplate = template.content.querySelector('.place').cloneNode(true);
@@ -78,7 +83,7 @@ const createCard = (card) => {
   const addNewPhotoOfPlace = placeTemplate.querySelector('.place__photo');
   addNewPhotoOfPlace.alt = card.name;
   addNewPhotoOfPlace.src = card.link;
-  addNewPhotoOfPlace.addEventListener('click', () => infoOfPlace(card.name, card.link));
+  addNewPhotoOfPlace.addEventListener('click', () => openPopupImage(card.name, card.link));
   return placeTemplate;
 }
 const renderList = (card) => {
@@ -94,10 +99,10 @@ function handleFormCardSubmit(evt) {
     link: linkInput.value
   });
   placeList.prepend(place);
-  closePopup(popupCard);
+ closePopup(popupCard);
   formElementCard.reset();
 }
-function infoOfPlace(name, link) {
+function openPopupImage(name, link) {
   popupPlacePhoto.name = name;
   popupPlacePhoto.src = link;
   popupPlaceDescrtiption.textContent = name;
@@ -105,11 +110,8 @@ function infoOfPlace(name, link) {
 }
 formElement.addEventListener('submit', handleFormProfileSubmit);
 popupOpenButtonElement.addEventListener('click', handleProfileEdit);
-popupCloseButtonElement.addEventListener('click', closePopup);
 popupCardOpenButtonElement.addEventListener('click', () => openPopup(popupCard));
-popupCardCloseButtonElement.addEventListener('click', () => closePopup(popupCard));
 formElementCard.addEventListener('submit', handleFormCardSubmit);
-popupCloseButtonElement.addEventListener('click', () => closePopup(popupProfile));
-popupPlaceCloseButtonElement.addEventListener('click', () => closePopup(popupPlace));
+
 
 
