@@ -39,8 +39,8 @@
           <h2 class="popup__title">Редактировать профиль</h2>
           <form class="form" name="forma">
             <fieldset class="form__fields">
-              <input type="text" name="name" value="Жак-Ив Кусто" class="form__input form__input_type_name" required>
-              <input type="text" name="job" value="Исследователь океана" class="form__input form__input_type_job" required>
+              <input type="text" name="name" value="Жак-Ив Кусто" class="form__input form__input_type_name" minlength="2" maxlength="40" required>
+              <input type="text" name="job" value="Исследователь океана" class="form__input form__input_type_job" minlength="2" maxlength="200"  required>
             </fieldset>
             <button type="submit" class="form__submit-btn">Сохранить</button>
           </form>
@@ -53,8 +53,8 @@
           <form class="form form_card" name="cardForma">
             <fieldset class="form__fields">
               <input type="text" name="nameCard" value="" class="form__input form__input_type_place"
-                placeholder="Новое место" required>
-              <input type="text" name="linkCard" value="" class="form__input form__input_type_link"
+                placeholder="Новое место" minlength="2" maxlength="30"  required>
+              <input type="url" name="linkCard" value="" class="form__input form__input_type_link"
                 placeholder="Ссылка на картинку" required>
             </fieldset>
             <button type="submit" class="form__submit-btn">Создать</button>
